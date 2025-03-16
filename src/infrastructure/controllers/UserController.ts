@@ -3,6 +3,7 @@ import { container } from "../../config/container";
 import { CreateUser } from "../../application/use-cases/CreateUser";
 import { GetUser } from "../../application/use-cases/GetUser";
 import { UpdateUser } from "../../application/use-cases/UpdateUser";
+import { DeleteUser } from "../../application/use-cases/DeleteUser";
 import { User } from "../../domain/User";
 
 export class UserController {
@@ -33,5 +34,12 @@ export class UserController {
             return res.status(404).json({ message: "User not found" });
         }
         return res.status(200).json(user);
+    }
+
+    static async deleteUser(req: Request, res: Response): Promise<any> {
+        const { id } = req.params;
+        const deleteUser = container.resolve(DeleteUser);
+        await deleteUser.execute(id);
+        return res.status(204).send();
     }
 }
