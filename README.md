@@ -1,4 +1,4 @@
-# clean-architecture-node
+# Simple NodeJS User management API using Clean Architecture
 
 Clean Architecture in a Node.js project, for a User Management API using Express, TypeScript, and Dependency Injection, adhering to SOLID principles and ensuring Separation of Concerns.
 

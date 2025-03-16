@@ -2,6 +2,7 @@ import { IUserRepository } from "../../domain/IUserRepository";
 import { User } from "../../domain/User";
 
 export class UserRepository implements IUserRepository {
+    // TODO: Replace with a real database
     private users: User[] = [];
 
     async createUser(user: User): Promise<User> {
