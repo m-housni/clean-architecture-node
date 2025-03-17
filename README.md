@@ -2,6 +2,13 @@
 
 Clean Architecture in a Node.js project, for a User Management API using Express, TypeScript, and Dependency Injection, adhering to SOLID principles and ensuring Separation of Concerns.
 
+## Features
+
+- [x] **Connect to a real database** (MongoDB, PostgreSQL).
+- [x] **Add More Use Cases** (`GetUser`, `UpdateUser`, `DeleteUser`).
+- [ ] **Implement Authentication** (JWT).
+- [ ] **Write Unit Tests** with Jest & Mocking.
+
 ## Project Structure
 
 ```
@@ -57,10 +64,3 @@ npx ts-node src/server.ts
 ```sh
 curl -X POST http://localhost:5000/api/users -H "Content-Type: application/json" -d '{"name": "John Doe", "email": "john@example.com"}'
 ```
-
-## Next Steps
-
-1. **Connect to a real database** (MongoDB, PostgreSQL).
-2. **Add More Use Cases** (`GetUser`, `UpdateUser`, `DeleteUser`).
-3. **Implement Authentication** (JWT).
-4. **Write Unit Tests** with Jest & Mocking.
