@@ -58,9 +58,9 @@ npx ts-node src/server.ts
 curl -X POST http://localhost:5000/api/users -H "Content-Type: application/json" -d '{"name": "John Doe", "email": "john@example.com"}'
 ```
 
-## Next Steps
+## Additional Features
 
-1. **Connect to a real database** (MongoDB, PostgreSQL).
-2. **Add More Use Cases** (`GetUser`, `UpdateUser`, `DeleteUser`).
-3. **Implement Authentication** (JWT).
-4. **Write Unit Tests** with Jest & Mocking.
+- [x] **Connect to a real database** (MongoDB, PostgreSQL).
+- [x] **Add More Use Cases** (`GetUser`, `UpdateUser`, `DeleteUser`).
+- [ ] **Implement Authentication** (JWT).
+- [ ] **Write Unit Tests** with Jest & Mocking.
