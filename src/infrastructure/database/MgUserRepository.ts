@@ -16,7 +16,7 @@ const UserModel: Model<IUserDocument> = mongoose.model<IUserDocument>(
   userSchema
 );
 
-export class UserRepository implements IUserRepository {
+export class MgUserRepository implements IUserRepository {
   async createUser(user: User): Promise<User> {
     const newUser = new UserModel(user);
     await newUser.save();
