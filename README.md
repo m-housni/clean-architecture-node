@@ -4,10 +4,10 @@ Clean Architecture in a Node.js project, for a User Management API using Express
 
 ## Features
 
-- [x] **Connect to a real database** (MongoDB, PostgreSQL).
-- [x] **Add More Use Cases** (`GetUser`, `UpdateUser`, `DeleteUser`).
-- [ ] **Implement Authentication** (JWT).
-- [ ] **Write Unit Tests** with Jest & Mocking.
+- [x] Switch database (MongoDB, PostgreSQL).
+- [x] Crud use-cases (`GetUser`, `UpdateUser`, `DeleteUser`).
+- [ ] Authentication (JWT).
+- [ ] Unit tests with Jest & Mocking.
 
 ## Project Structure
 
